@@ -1,0 +1,22 @@
+{
+  "name": "anypercent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "returnTrue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaril/anypercent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaril/anypercent/issues"
+  },
+  "homepage": "https://github.com/jaril/anypercent#readme",
+  "devDependencies": {
+    "cypress": "^10.3.1"
+  }
+}
