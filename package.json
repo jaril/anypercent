@@ -18,5 +18,8 @@
   "homepage": "https://github.com/jaril/anypercent#readme",
   "devDependencies": {
     "cypress": "^10.3.1"
+  },
+  "dependencies": {
+    "@replayio/cypress": "^0.2.10"
   }
 }
