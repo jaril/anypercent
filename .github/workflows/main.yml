@@ -1,0 +1,26 @@
+name: Cypress Tests
+
+on: [pull_request]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      # - name: Cypress run
+      #   uses: cypress-io/github-action@v4
+        # with:
+        #   build: npm run build
+        #   start: npm start
+      - name: Install dependencies
+        id: install-dependencies
+        run: npm install
+      - name: Cypress+Replay tests
+        uses: replayio/action-cypress@v0.2.2
+        with:
+          api-key: rwk_mdtrXDvO5j45WE7jtHWPKm7ZyOvYnhzCvN22h2luw8C
+          issue-number: ${{ github.event.pull_request.number }}
+          browser: 'Replay Firefox'
